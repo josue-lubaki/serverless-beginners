@@ -5,15 +5,56 @@ Description: 'hello-lambda
   Sample SAM Template for hello-lambda
 
   '
+<<<<<<< HEAD
+=======
+Globals:
+  Function:
+    Timeout: 20
+>>>>>>> fba4c28be26abb64353a84748546f8dd5c06352a
 Resources:
   HelloWorldFunction:
     Type: AWS::Serverless::Function
     Properties:
       CodeUri: HelloWorldFunction
+<<<<<<< HEAD
       Handler: helloworld.App::hello
+=======
+      Handler: helloworld.App::handleRequest
+>>>>>>> fba4c28be26abb64353a84748546f8dd5c06352a
       Runtime: java11
       Architectures:
       - x86_64
       MemorySize: 512
+<<<<<<< HEAD
     Metadata:
       SamResourceId: HelloWorldFunction
+=======
+      Environment:
+        Variables:
+          PARAM1: VALUE
+      Events:
+        HelloWorld:
+          Type: Api
+          Properties:
+            Path: /hello
+            Method: get
+    Metadata:
+      SamResourceId: HelloWorldFunction
+Outputs:
+  HelloWorldApi:
+    Description: API Gateway endpoint URL for Prod stage for Hello World function
+    Value:
+      Fn::Sub: https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/hello/
+  HelloWorldFunction:
+    Description: Hello World Lambda Function ARN
+    Value:
+      Fn::GetAtt:
+      - HelloWorldFunction
+      - Arn
+  HelloWorldFunctionIamRole:
+    Description: Implicit IAM Role created for Hello World function
+    Value:
+      Fn::GetAtt:
+      - HelloWorldFunctionRole
+      - Arn
+>>>>>>> fba4c28be26abb64353a84748546f8dd5c06352a
