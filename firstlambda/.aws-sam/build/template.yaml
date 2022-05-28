@@ -1,0 +1,19 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: 'hello-lambda
+
+  Sample SAM Template for hello-lambda
+
+  '
+Resources:
+  HelloWorldFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: HelloWorldFunction
+      Handler: helloworld.App::hello
+      Runtime: java11
+      Architectures:
+      - x86_64
+      MemorySize: 512
+    Metadata:
+      SamResourceId: HelloWorldFunction

@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HelloWorldFunction/HelloWorld.iml" filepath="$PROJECT_DIR$/HelloWorldFunction/HelloWorld.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/firstlambda.iml" filepath="$PROJECT_DIR$/.idea/firstlambda.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hello-lambda.iml" filepath="$PROJECT_DIR$/hello-lambda.iml" />
     </modules>
   </component>
 </project>
