@@ -4,12 +4,22 @@
 - install <a href="https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install-windows.html">SAM CLI</a>
 - Using command Line :
 ```bash
-    sam init
+sam init
  ```
 - build project : 
 
 ```bash 
-    sam build
+sam build
+```
+
+- local running project :
+```bash
+sam local invoke HelloWorldFunction --event events://event.json
+```
+
+- watch logs:
+```bash
+sam logs -n HelloWorldFunction --stack-name first-lambda-maven --tail
 ```
 
 
