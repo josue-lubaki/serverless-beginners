@@ -22,6 +22,10 @@ sam local invoke HelloWorldFunction --event events://event.json
 sam logs -n HelloWorldFunction --stack-name first-lambda-maven --tail
 ```
 
+- invoke function:
+```bash
+aws lambda invoke --invocation-type Event --function-name [function_name] outputfile.txt
+```
 
 
 

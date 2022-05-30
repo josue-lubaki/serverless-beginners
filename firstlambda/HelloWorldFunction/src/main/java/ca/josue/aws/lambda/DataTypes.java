@@ -8,6 +8,25 @@ import java.io.OutputStream;
 import java.util.*;
 
 public class DataTypes {
+
+    private final Double instanceVariable = Math.random();
+    private static final double staticVariable = Math.random();
+
+    public DataTypes() {
+        System.out.println("DataTypes constructor");
+    }
+
+    static {
+        System.out.println("DataTypes static block");
+    }
+
+    public void coldStartBasics(){
+        double localVariable = Math.random();
+        System.out.println("Local variable: " + localVariable);
+        System.out.println("Instance variable: " + instanceVariable);
+        System.out.println("Static variable: " + staticVariable);
+    }
+
     public boolean getNumber(float number){
         return number > 100;
     }
