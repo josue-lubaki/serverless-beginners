@@ -33,4 +33,13 @@ public class DataTypes {
         return studentsScores;
     }
 
+    public ClinicalData getClinicalData(Patient patient) {
+        System.out.println("Getting clinical data for patient: " + patient.getName());
+        System.out.println("Patient ssn " + patient.getSsn());
+        ClinicalData clinicalData = new ClinicalData();
+        clinicalData.setBloodPressure("80/120");
+        clinicalData.setHeartRate(80);
+        return clinicalData;
+    }
+
 }
