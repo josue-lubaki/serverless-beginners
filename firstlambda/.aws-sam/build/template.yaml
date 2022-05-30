@@ -10,7 +10,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       CodeUri: HelloWorldFunction
-      Handler: ca.josue.aws.lambda.DataTypes::getClinicalData
+      Handler: ca.josue.aws.lambda.DataTypes::getOutput
       Runtime: java11
       Architectures:
       - x86_64

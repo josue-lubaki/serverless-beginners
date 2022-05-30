@@ -1,5 +1,8 @@
 package ca.josue.aws.lambda;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.util.*;
 
 public class DataTypes {
@@ -40,6 +43,14 @@ public class DataTypes {
         clinicalData.setBloodPressure("80/120");
         clinicalData.setHeartRate(80);
         return clinicalData;
+    }
+
+    public void getOutput(InputStream inputStream, OutputStream outputStream) throws IOException {
+        // transform input to lowercase
+        int data;
+        while ((data = inputStream.read()) != -1) {
+            outputStream.write(Character.toLowerCase(data));
+        }
     }
 
 }
