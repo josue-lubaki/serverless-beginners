@@ -1,8 +1,6 @@
 package ca.josue.aws.lambda;
 
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class DataTypes {
     public boolean getNumber(float number){
@@ -19,6 +17,20 @@ public class DataTypes {
         names.forEach(name -> scores.add(studentsScores.get(name)));
 
         return scores;
+    }
+
+    public void saveEmployeeData(Map<String, String> employeeData){
+        System.out.println("Saving employee data");
+        System.out.println(employeeData);
+    }
+
+    public Map<String, List<Integer>> getStudentScores(){
+        HashMap<String, List<Integer>> studentsScores = new HashMap<>();
+        studentsScores.put("John", Arrays.asList(90, 80, 100));
+        studentsScores.put("Bob", Arrays.asList(80, 70, 100));
+        studentsScores.put("Ahmed", Arrays.asList(100, 90, 20));
+
+        return studentsScores;
     }
 
 }
