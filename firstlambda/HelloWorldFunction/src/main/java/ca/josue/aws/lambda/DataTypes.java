@@ -1,5 +1,7 @@
 package ca.josue.aws.lambda;
 
+import com.amazonaws.services.lambda.runtime.Context;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -45,7 +47,21 @@ public class DataTypes {
         return clinicalData;
     }
 
-    public void getOutput(InputStream inputStream, OutputStream outputStream) throws IOException {
+    public void getOutput(InputStream inputStream, OutputStream outputStream, Context context) throws IOException, InterruptedException {
+        Thread.sleep(4000);
+
+        System.out.println("context.getAwsRequestId() " + context.getAwsRequestId());
+        System.out.println("context.getFunctionName() " + context.getFunctionName());
+        System.out.println("context.getRemainingTimeInMillis() " + context.getRemainingTimeInMillis());
+        System.out.println("context.getMemoryLimitInMB() " + context.getMemoryLimitInMB());
+        System.out.println("context.getLogGroupName() " + context.getLogGroupName());
+        System.out.println("context.getLogStreamName() " + context.getLogStreamName());
+        System.out.println("context.getFunctionVersion() " + context.getFunctionVersion());
+        System.out.println("context.getInvokedFunctionArn() " + context.getInvokedFunctionArn());
+        System.out.println("context.getIdentity() " + context.getIdentity());
+        System.out.println("context.getLogger() " + context.getLogger());
+        System.out.println("context.getClientContext() " + context.getClientContext());
+
         // transform input to lowercase
         int data;
         while ((data = inputStream.read()) != -1) {

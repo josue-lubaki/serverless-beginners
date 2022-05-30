@@ -15,5 +15,6 @@ Resources:
       Architectures:
       - x86_64
       MemorySize: 512
+      Timeout: 6
     Metadata:
       SamResourceId: HelloWorldFunction
