@@ -16,5 +16,8 @@ Resources:
       - x86_64
       MemorySize: 512
       Timeout: 6
+      Environment:
+        Variables:
+          restapiurl: test-restapi-url
     Metadata:
       SamResourceId: HelloWorldFunction
