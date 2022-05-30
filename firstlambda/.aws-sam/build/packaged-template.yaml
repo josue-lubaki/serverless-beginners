@@ -13,7 +13,7 @@ Resources:
       Handler: helloworld.App::hello
       Runtime: java11
       Architectures:
-      - x86_64
+        - x86_64
       MemorySize: 512
     Metadata:
       SamResourceId: HelloWorldFunction

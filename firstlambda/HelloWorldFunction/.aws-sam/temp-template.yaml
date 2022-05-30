@@ -5,7 +5,11 @@ Resources:
       Timeout: 300
       MemorySize: 128
       Handler: helloworld.App::hello
+<<<<<<< HEAD
       CodeUri: C:\Users\JosueLubaki\OneDrive - Alithya\courses\Serverless\serverless-course\HelloWorldFunction
+=======
+      CodeUri: E:\GitHub\2022\aws\hello-lambda\HelloWorldFunction
+>>>>>>> 02fc378b418f755a123ea7c7529aa2d61ea6a1c8
       Runtime: java11
       Architectures:
         - x86_64
