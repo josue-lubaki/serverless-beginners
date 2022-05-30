@@ -1,1 +1,6 @@
-ALL THE POWER IS WISH IN YOU. YOU CAN DO ANYTHING AND EVERYTHING.
+{
+  "name" : "John",
+  "cardNumber" : "123456789",
+  "expirationDate" : "12/2022",
+  "cvv" : "123"
+}
