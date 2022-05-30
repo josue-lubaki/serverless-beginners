@@ -4,12 +4,8 @@ Resources:
     Properties:
       Timeout: 300
       MemorySize: 128
-<<<<<<< HEAD
       Handler: helloworld.App::hello
-=======
-      Handler: helloworld.App
->>>>>>> fba4c28be26abb64353a84748546f8dd5c06352a
-      CodeUri: E:\GitHub\2022\aws\hello-lambda\HelloWorldFunction
+      CodeUri: C:\Users\JosueLubaki\OneDrive - Alithya\courses\Serverless\serverless-course\HelloWorldFunction
       Runtime: java11
       Architectures:
         - x86_64

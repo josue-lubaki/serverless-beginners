@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00313a2e-cd65-40ca-9991-979c4ee2cfea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/firstlambda/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstlambda/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/firstlambda/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firstlambda/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/firstlambda/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/firstlambda" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -59,6 +56,10 @@
       <updated>1653749136000</updated>
       <workItem from="1653749137362" duration="1040000" />
       <workItem from="1653750202562" duration="831000" />
+      <workItem from="1653921569136" duration="233000" />
+      <workItem from="1653927584411" duration="32000" />
+      <workItem from="1653927731843" duration="2000" />
+      <workItem from="1653929540455" duration="58000" />
     </task>
     <servers />
   </component>

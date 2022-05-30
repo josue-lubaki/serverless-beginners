@@ -5,6 +5,6 @@ package helloworld;
  */
 public class App {
     public String hello(final String input) {
-        return "Hello " + (input == null ? "" : input) + "!";
+        return "Hello " + (input == null || input.isBlank() ? "Josue Lubaki" : input) + "!";
     }
 }
