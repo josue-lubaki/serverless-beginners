@@ -16,7 +16,11 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
 <<<<<<< HEAD
+<<<<<<< HEAD
       CodeUri: s3://first-lambda-maven/e3b308f8b242263bf7fb53a98736b10b
+=======
+      CodeUri: s3://first-lambda-maven/7796fbb1c901c4ed405012be748ca513
+>>>>>>> 5c0bdddb8b5853cbfb24bb93bfe916d29d532d53
       Handler: helloworld.App::hello
 =======
       CodeUri: s3://first-lambda-maven/cb6616751fd757f49139364c991d7a69
