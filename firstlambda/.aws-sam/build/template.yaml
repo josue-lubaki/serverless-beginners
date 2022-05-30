@@ -10,7 +10,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       CodeUri: HelloWorldFunction
-      Handler: helloworld.App::hello
+      Handler: ca.josue.aws.lambda.DataTypes::getScores
       Runtime: java11
       Architectures:
       - x86_64
