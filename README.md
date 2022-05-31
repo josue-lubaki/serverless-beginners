@@ -27,7 +27,12 @@ sam logs -n HelloWorldFunction --stack-name first-lambda-maven --tail
 aws lambda invoke --invocation-type Event --function-name [function_name] outputfile.txt
 ```
 
+- start application on local machine :
+```bash
+sam local start-api
+```
 
+- List of policies [[aws](https://docs.aws.amazon.com/fr_fr/serverless-application-model/latest/developerguide/serverless-policy-template-list.html)]
 
 
 
