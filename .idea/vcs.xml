@@ -3,6 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/firstlambda" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ordersapi" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/serverless-api-gateway" vcs="Git" />
   </component>
 </project>
